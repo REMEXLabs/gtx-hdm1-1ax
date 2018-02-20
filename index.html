@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- The above 3 meta tags must come first for Bootstrap. -->
+  <!--meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /-->
+  <title>Accessible Gamification (Online Course)</title>
+  <link rel="stylesheet" type="text/css" href="jslibs/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="jslibs/bootstrap/css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="jslibs/bootstrap/css/jumbotron-narrow.css" />
+  <link rel="stylesheet" type="text/css" href="css/remexlabs.css" />
+  <link rel="stylesheet" type="text/css" href="./jslibs/plyr-2.0.13/plyr.css" />
+  <link rel="shortcut icon" href="img/favicon_hdm_2017.ico" type="image/ico" />
+  <meta content="noindex, nofollow" name="robots" />
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div>
+  <header class="jumbotron">
+    <h1>Accessible Gamification</h1>
+    <p class="lead">Online Course</p>
+  </header>
+</div>
+
+<main>
+  <p>This page combines all the resources from the course an overview of the
+    <a href="https://www.edx.org/course/accessible-gamification-business-gtx-hdm1-1ax">Accessible Gamification for Business</a>
+    on a single page.
+    These resources are available as open educational resources (<abbr>OERs</abbr>) under the terms of the
+    <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International licence</a>
+    (<abbr>CC</abbr>-BY 4.0).
+    Simply put, this licence allows you to share, adapt and redistribute the content of the <abbr>OERs</abbr>, 
+    provided that you correctly attribute the original creators of these resources 
+    (<span lang="de">Hochschule der Medien</span>/Stuttgart Media University). 
+    If you are not familiar with this licence, please read it before reusing these <abbr>OERs</abbr>.
+  </p>
+
+  <!--div class="row"-->
+    <!--div class="col-lg-6"-->
+      <h2>Basics</h2>
+      <h3>Games and Fun</h3>
+        <div data-type="vimeo" data-video-id="221223111"></div>
+      <h3>Games Classifications</h3>
+        <div data-type="vimeo" data-video-id="221224734"></div>
+      <h3>Gamification</h3>
+        <div data-type="vimeo" data-video-id="221225287"></div>
+      <h3>Players</h3>
+        <div data-type="vimeo" data-video-id="221225853"></div>
+
+      <h2>Gamification</h2>
+      <h3>Gamification Classification</h3>
+        <div data-type="vimeo" data-video-id="221226445"></div>
+      <h3>Gamification Requirements</h3>
+        <div data-type="vimeo" data-video-id="221226963"></div>
+      <h3>Accessibility Basics</h3>
+        <div data-type="vimeo" data-video-id="221227366"></div>
+
+      <h2>Design Patterns</h2>
+      <h3>Design Patterns Basics</h3>
+        <div data-type="vimeo" data-video-id="221228560"></div>
+      <h3>Design Patterns Overview</h3>
+        <div data-type="vimeo" data-video-id="221229514"></div>
+
+      <h2>Reward and Challenge</h2>
+      <h3>Reward</h3>
+        <div data-type="vimeo" data-video-id="221230531"></div>
+      <h3>Challenge</h3>
+        <div data-type="vimeo" data-video-id="221231128"></div>
+
+      <h2>Actions Space and Development</h2>
+      <h3>Action Space and Development</h3>
+        <div data-type="vimeo" data-video-id="221231534"></div>
+      <h3>Development</h3>
+        <div data-type="vimeo" data-video-id="221232193"></div>
+      <!--
+      <h3></h3>
+        <div data-type="vimeo" data-video-id=""></div>
+      -->
+    <!--/div-->
+  <!--/div-->
+</main>
+
+<footer>
+  <p>Copyright 2016-2018, research group <a href="https://www.hdm-stuttgart.de/remex">REMEX</a>, 
+  <a href="https://www.hdm-stuttgart.de/" hreflang="de" lang="de">Hochschule der Medien</a> /
+  <a href="https://www.hdm-stuttgart.de/english" hreflang="en">Stuttgart Media University</a>.
+  <br /><a href="impressum.html" hreflang="en" lang="de">Impressum</a>.
+  </p>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="jslibs/jquery-3.1.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="jslibs/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="jslibs/plyr-2.0.13/plyr.js" type="text/javascript"></script>
+<!-- Rangetouch to fix <input type="range"> on touch devices (see https://rangetouch.com) -->
+
+<script src="jslibs/rangetouch-1.0.5/rangetouch.js" type="text/javascript"></script>
+<script type="text/javascript">
+  plyr.setup({ captions: { defaultActive: true }, controls: ['play', 'progress', 'currrent-time', 'volume', 'mute', 'captions', 'fullscreen'], tooltips: { controls: true, seek: true}, displayDuration: true });
+  console.log("plyr.supported: " + plyr.supported("video"));
+</script>
+</body>
+</html>
+

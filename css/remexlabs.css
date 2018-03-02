@@ -62,11 +62,16 @@ a:hover, a:focus, a:active {
 }
 
 iframe {
-  border: none;
+  border: none; /*replace frameborder attribute on iframe*/
 }
 iframe[src^="https://www.youtube.com/"] {
   margin-top: 10px;
 }
+
+ol#toc { counter-reset: module-num; list-style-type: none; margin-left: 0; padding-left: 0; }
+ol#toc > li:before {content: /*"Module "*/ counter(module-num) ". "; counter-increment: module-num; }
+ol#toc > li > ol { counter-reset: unit-num; list-style-type: none; }
+ol#toc > li > ol > li:before { counter-increment: unit-num; content: counter(module-num) "." counter(unit-num) ". "; }
 
 } /* END @media all*/
 
